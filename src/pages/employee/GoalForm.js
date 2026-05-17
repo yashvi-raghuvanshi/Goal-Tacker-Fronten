@@ -25,14 +25,6 @@ const GoalForm = () => {
   //   fetchThrustAreas()
   // }, [])
 
-  const fetchThrustAreas = async () => {
-    try {
-      const res = await API.get('/goals/thrust-areas')
-      setThrustAreas(res.data)
-    } catch (err) {
-      console.error(err)
-    }
-  }
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })

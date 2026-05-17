@@ -19,8 +19,9 @@ const CheckIn = () => {
   const [previousCheckins, setPreviousCheckins] = useState([])
 
   useEffect(() => {
-    if (goal) fetchPreviousCheckins()
-  }, [])
+  if (goal) fetchPreviousCheckins()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [])
 
   const fetchPreviousCheckins = async () => {
     try {
