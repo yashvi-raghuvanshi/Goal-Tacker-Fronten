@@ -15,9 +15,10 @@ const GoalReview = () => {
   const [editingGoal, setEditingGoal] = useState(null)
   const [editValues, setEditValues] = useState({})
 
-  useEffect(() => {
-    fetchData()
-  }, [])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchData()
+}, [])
 
   const fetchData = async () => {
     try {

@@ -13,9 +13,10 @@ const CheckInReview = () => {
   const [success, setSuccess] = useState('')
   const [activeWindow, setActiveWindow] = useState(null)
 
-  useEffect(() => {
-    fetchData()
-  }, [])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchData()
+}, [])
 
   const fetchData = async () => {
     try {
