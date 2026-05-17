@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-  baseURL: 'http://localhost:4000/api'
+  baseURL: 'https://goal-tracker-backend-8n2p.onrender.com'
 })
 
 // Automatically add token to every request

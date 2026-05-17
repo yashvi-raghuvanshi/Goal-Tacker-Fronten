@@ -20,7 +20,7 @@ const CheckIn = () => {
 
   useEffect(() => {
     if (goal) fetchPreviousCheckins()
-  }, [goal])
+  }, [])
 
   const fetchPreviousCheckins = async () => {
     try {
