@@ -243,8 +243,8 @@ const Dashboard = () => {
               <div style={{ 
                 display: 'flex', 
                 justifyContent: 'space-between',
-                fontSize: '0.85rem',
-                color: '#999',
+                fontSize: '0.95rem',
+                color: 'white',
                 marginBottom: '10px'
               }}>
                 <span> Target: {goal.target}</span>
@@ -265,6 +265,7 @@ const Dashboard = () => {
                   onClick={() => navigate(`/employee/goals/new`, { state: { goal } })}
                   style={{
                     width: '100%',
+                    color:'white',
                     padding: '8px',
                     backgroundColor: '#222',
                     border: '1px solid #e5e7eb',
